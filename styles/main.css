@@ -1,0 +1,209 @@
+#coins {
+  border-radius: 5px;
+  background: rgb(215, 210, 210);
+  width: 80vw;
+  height: 60vh; /* height given for illustration */
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+}
+
+#coins-side{
+  display: block;
+  flex-direction: column;
+  overflow-x: auto;
+}
+
+@media screen and (max-width: 900px) {
+  #book-results .card {
+    width: 100%;
+  }
+
+  p {
+    display: block;
+  }
+
+  #coins-side{
+    height: 10vh;
+    overflow-y: auto;
+  }
+
+  .coin {
+    border-radius: 5px;
+    background: rgb(157, 157, 255);
+    margin: 4px;
+    flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .coin {
+    flex: 0 1 calc(50% - 8px); /* <-- adjusting for margin */
+  }
+
+  .coin-btn {
+    border-radius: 5px;
+    background: rgb(157, 157, 255);
+    margin: 4px;
+    flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
+    width: 90%;
+  }
+  .coin-btn {
+    flex: 0 1 calc(50% - 8px); /* <-- adjusting for margin */
+  }
+
+  #coins {
+    width: 100%;
+    height: auto;
+    flex-flow: row wrap;
+  }
+
+  #coin-results {
+    align-self: center;
+    justify-self: center;
+    margin-top: 5vh;
+    border-radius: 5px;
+    background: rgb(215, 210, 210);
+    height: 40vh; /* height given for illustration */
+    display: none;
+    justify-content: center;
+    flex-flow: row wrap;
+    position: relative;
+    /* Adds Scrolling content */
+    overflow-y: auto;
+  }
+
+
+  #search-results {
+    margin-top: 5vh;
+    border-radius: 5px;
+    background: rgb(215, 210, 210);
+    height: 40vh; /* height given for illustration */
+    display: none;
+    flex-flow: row wrap;
+    position: relative;
+    /* Adds Scrolling content */
+    overflow-y: auto;
+  }
+
+}
+
+@media screen and (min-width: 901px) {
+  #book-results .card {
+    width: 8rem;
+  }
+
+  html {
+    height: 100vh;
+    width: 98vw;
+  }
+
+  #coins-side{
+    height: 90vh;
+    overflow-y: auto;
+
+  }
+
+  .col {
+    height: 100vh;
+    padding: 0;
+  }
+
+  .coin {
+    border-radius: 5px;
+    background: rgb(157, 157, 255);
+    margin: 4px;
+    flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .coin-btn {
+    border-radius: 5px;
+    background: rgb(157, 157, 255);
+    margin: 4px;
+    flex: 0 1 calc(20% - 8px); /* <-- adjusting for margin */
+    width: 90%;
+  }
+
+  p {
+    margin: 0;
+    color: black;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 600;
+  }
+
+  #coin-results {
+    margin-top: 5vh;
+    border-radius: 5px;
+    background: rgb(215, 210, 210);
+    width: 80vw;
+    height: 40vh; /* height given for illustration */
+    display: none;
+    flex-flow: row wrap;
+    position: relative;
+    /* Adds Scrolling content */
+    overflow-y: auto;
+  }
+
+  #search-results {
+    margin-top: 5vh;
+    border-radius: 5px;
+    background: rgb(215, 210, 210);
+    width: 80vw;
+    height: 40vh; /* height given for illustration */
+    display: none;
+    flex-flow: row wrap;
+    position: relative;
+    /* Adds Scrolling content */
+    overflow-y: auto;
+  }
+
+}
+
+#card-body {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  margin-right: 10px;
+}
+
+#news-filter {
+  margin-top: 1vh;
+  display: none;
+}
+
+#filter-container {
+  display: none;
+  width: 98%;
+}
+
+#coin-results > p {
+  flex-basis: 100%;
+  text-align: center;
+}
+
+/* Changing the default color from the bootstrap */
+.btn {
+  color: rgb(157, 157, 255);
+}
+
+.btn-outline-success {
+  --bs-btn-color: rgb(157, 157, 255);
+  --bs-btn-border-color: rgb(157, 157, 255);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: rgb(157, 157, 255);
+  --bs-btn-hover-border-color: rgb(157, 157, 255);
+  --bs-btn-focus-shadow-rgb: 25, 135, 84;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: rgb(157, 157, 255);
+  --bs-btn-active-border-color: rgb(157, 157, 255);
+  --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+  --bs-btn-disabled-color: rgb(157, 157, 255);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: rgb(157, 157, 255);
+  --bs-gradient: none;
+}
